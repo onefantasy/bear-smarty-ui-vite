@@ -1,5 +1,5 @@
 import type { PropType } from "vue";
-import { defineComponent, h } from "vue";
+import { defineComponent } from "vue";
 import "uno.css";
 
 export type ISize = "small" | "medium" | "large";
