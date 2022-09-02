@@ -1,18 +1,18 @@
-import { presetUno, presetAttributify, presetIcons } from 'unocss'
-import Unocss from 'unocss/vite'
+import { presetUno, presetAttributify, presetIcons } from "unocss";
+import Unocss from "unocss/vite";
 
 const colors = [
-  'white',
-  'black',
-  'gray',
-  'red',
-  'yellow',
-  'green',
-  'blue',
-  'indigo',
-  'purple',
-  'pink'
-]
+  "white",
+  "black",
+  "gray",
+  "red",
+  "yellow",
+  "green",
+  "blue",
+  "indigo",
+  "purple",
+  "pink",
+];
 
 const safelist = [
   ...colors.map((v) => `bg-${v}-500`),
@@ -25,9 +25,9 @@ const safelist = [
     "star-off",
     "delete",
     "add",
-    "share"
-  ].map((v) => `i-ic-baseline-${v}`)
-]
+    "share",
+  ].map((v) => `i-ic-baseline-${v}`),
+];
 
 export default () =>
   Unocss({
@@ -36,6 +36,6 @@ export default () =>
       presetUno(),
       presetAttributify(),
       // 图标预设
-      presetIcons()
-    ]
-  })
+      presetIcons(),
+    ],
+  });

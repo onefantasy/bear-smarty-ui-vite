@@ -27,7 +27,9 @@ export default defineConfig({
         },
       },
     },
-    minify: false,
+    minify: "terser", // boolean | 'terset' | 'esbuild'
+    sourcemap: true, // 输出单独 source 文件
+    // brotliSize: true,
     cssCodeSplit: true,
     lib: {
       entry: "./src/entry.ts",
